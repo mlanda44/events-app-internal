@@ -1,0 +1,22 @@
+Events app listening at http://:::8082
+Error getting events Error: 2 UNKNOWN: Getting metadata from plugin failed with error: Could not refresh access token: Invalid response from the metadata service
+    at Object.callErrorFromStatus (/home/user209/sample-Firestore/internal/node_modules/@grpc/grpc-js/build/src/call.js:31:26)
+    at Object.onReceiveStatus (/home/user209/sample-Firestore/internal/node_modules/@grpc/grpc-js/build/src/client.js:327:49)
+    at Object.onReceiveStatus (/home/user209/sample-Firestore/internal/node_modules/@grpc/grpc-js/build/src/client-interceptors.js:297:181)
+    at /home/user209/sample-Firestore/internal/node_modules/@grpc/grpc-js/build/src/call-stream.js:130:78
+    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)
+Caused by: Error
+    at CollectionReference._get (/home/user209/sample-Firestore/internal/node_modules/@google-cloud/firestore/build/src/reference.js:1466:23)
+    at CollectionReference.get (/home/user209/sample-Firestore/internal/node_modules/@google-cloud/firestore/build/src/reference.js:1455:21)
+    at getEvents (/home/user209/sample-Firestore/internal/server.js:56:36)
+    at /home/user209/sample-Firestore/internal/server.js:84:5
+    at Layer.handle [as handle_request] (/home/user209/sample-Firestore/internal/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/user209/sample-Firestore/internal/node_modules/express/lib/router/route.js:137:13)
+    at Route.dispatch (/home/user209/sample-Firestore/internal/node_modules/express/lib/router/route.js:112:3)
+    at Layer.handle [as handle_request] (/home/user209/sample-Firestore/internal/node_modules/express/lib/router/layer.js:95:5)
+    at /home/user209/sample-Firestore/internal/node_modules/express/lib/router/index.js:281:22
+    at Function.process_params (/home/user209/sample-Firestore/internal/node_modules/express/lib/router/index.js:335:12) {
+  code: 2,
+  details: 'Getting metadata from plugin failed with error: Could not refresh access token: Invalid response from the metadata service',
+  metadata: Metadata { internalRepr: Map(0) {}, options: {} }
+}
